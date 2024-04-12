@@ -7,7 +7,7 @@ import { PriceTickSpanCalculator } from './price-tick-span-calculator';
 export type CoordinateToLogicalConverter = (x: number, firstValue: number) => number;
 export type LogicalToCoordinateConverter = (x: number, firstValue: number, keepItFloat: boolean) => number;
 
-const TICK_DENSITY = 2.5;
+const TICK_DENSITY = 4.0;
 
 export class PriceTickMarkBuilder {
 	private _marks: PriceMark[] = [];
